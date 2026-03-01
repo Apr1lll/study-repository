@@ -36,8 +36,7 @@ func SelectRows(ctx context.Context, conn *pgx.Conn) ([]TaskModel, error) {
 			return nil, err
 		}
 		tasks = append(tasks, task)
-		// fmt.Println(id, title, description, completed, createdAt, completedAt)
-		// printTask(task)
+
 	}
 
 	return tasks, nil
